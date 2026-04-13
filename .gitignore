@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Data files
+data/raw/
+data/processed/
+data/experiments/
+
+# Hugging Face / model cache if local
+*.safetensors
+
+# Logs
+*.log
+
+*.session
