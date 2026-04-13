@@ -1,0 +1,1842 @@
+{
+  "evaluated_samples": 199,
+  "accuracy": 0.5728643216080402,
+  "binary_verified_vs_rest": {
+    "precision": 0.64,
+    "recall": 0.6808510638297872,
+    "f1": 0.6597938144329897,
+    "tp": 32,
+    "fp": 18,
+    "fn": 15
+  },
+  "report_3class": {
+    "uncertain": {
+      "precision": 0.07142857142857142,
+      "recall": 0.3333333333333333,
+      "f1": 0.11764705882352941,
+      "support": 15
+    },
+    "unverified": {
+      "precision": 0.9746835443037974,
+      "recall": 0.5620437956204379,
+      "f1": 0.7129629629629629,
+      "support": 137
+    },
+    "verified": {
+      "precision": 0.64,
+      "recall": 0.6808510638297872,
+      "f1": 0.6597938144329897,
+      "support": 47
+    }
+  },
+  "confusion_matrix_3class": {
+    "uncertain": {
+      "uncertain": 5,
+      "unverified": 1,
+      "verified": 9
+    },
+    "unverified": {
+      "uncertain": 51,
+      "unverified": 77,
+      "verified": 9
+    },
+    "verified": {
+      "uncertain": 14,
+      "unverified": 1,
+      "verified": 32
+    }
+  },
+  "merged_rows": [
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65157,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.15559970582925675,
+      "keyword_overlap": 4,
+      "matched_news_title": "Росія запустила по Одесі понад 60 дронів: Зеленський відреагував на нічну атаку"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65091,
+      "true_label": "uncertain",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.1554365578162179,
+      "keyword_overlap": 4,
+      "matched_news_title": "Велика делегація з ЄС приїде в Україну в роковини Бучі: Сибіга розкрив деталі"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64710,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.15464718712330539,
+      "keyword_overlap": 2,
+      "matched_news_title": "Бензин різко здешевшав, але не всюди: ціни на АЗС 27 березня"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65121,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.1468351948784561,
+      "keyword_overlap": 4,
+      "matched_news_title": "Перемир'я знижує ціни? Нафта рекордно подешевшала після заяв Трампа"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134505,
+      "true_label": "uncertain",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.14303465698800089,
+      "keyword_overlap": 5,
+      "matched_news_title": "Джоан Роулінг відреагувала на перший тизер серіалу про Гаррі Поттера від HBO: що вона сказала"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65068,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.14296037958968286,
+      "keyword_overlap": 3,
+      "matched_news_title": "Сибіга і Рубіо обговорили війну в Україні на G7 у Франції"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65132,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.13081401625650524,
+      "keyword_overlap": 2,
+      "matched_news_title": "Стубб відповів, чи може Трамп відмовитися від обіцянки зупинити війну в Україні"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65138,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.12876252250864992,
+      "keyword_overlap": 8,
+      "matched_news_title": "Кривий Ріг під атакою: росіяни вдарили по енергетиці та житловому сектору"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65120,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.12833854929056027,
+      "keyword_overlap": 6,
+      "matched_news_title": "Росія запустила по Одесі понад 60 дронів: Зеленський відреагував на нічну атаку"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64789,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.12579349605138818,
+      "keyword_overlap": 3,
+      "matched_news_title": "Силою \"мобілізували\" 60-річного: на Волині затримали посадовця ТЦК, але там заперечують побиття"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134675,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.12300364740859249,
+      "keyword_overlap": 3,
+      "matched_news_title": "Зеленський прибув до Катару та зробив заяву про безпеку і партнерство"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65179,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.11694565508781916,
+      "keyword_overlap": 6,
+      "matched_news_title": "Нічна \"бавовна\" в тилу РФ: невідомі дрони влаштували вогняне шоу на Ярославському НПЗ"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64749,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.108893073437204,
+      "keyword_overlap": 2,
+      "matched_news_title": "У КВІР заявили про \"закриття\" Ормузької протоки: чи можливі винятки"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134494,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.10693875078380316,
+      "keyword_overlap": 3,
+      "matched_news_title": "\"На мільйони не живу\". Суханов здивував зізнанням про заробітки під час війни"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134581,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.10613462152245992,
+      "keyword_overlap": 2,
+      "matched_news_title": "\"На мільйони не живу\". Суханов здивував зізнанням про заробітки під час війни"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65059,
+      "true_label": "uncertain",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.1060308825665582,
+      "keyword_overlap": 4,
+      "matched_news_title": "Перемир'я знижує ціни? Нафта рекордно подешевшала після заяв Трампа"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65047,
+      "true_label": "uncertain",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.10550570439865863,
+      "keyword_overlap": 5,
+      "matched_news_title": "РФ атакувала промислове підприємство на Полтавщині: без газу понад 5 тисяч абонентів"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64713,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.10405780091302001,
+      "keyword_overlap": 2,
+      "matched_news_title": "Відповідь Ірану на мирну пропозицію США надійде сьогодні: що відомо"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64773,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.10398784612137808,
+      "keyword_overlap": 5,
+      "matched_news_title": "Чи надсилатимуть повістки через \"Дію\": Мінцифри зробило заяву"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134640,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.10176154742947682,
+      "keyword_overlap": 3,
+      "matched_news_title": "Росія запустила по Одесі понад 60 дронів: Зеленський відреагував на нічну атаку"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64748,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.10049054788556343,
+      "keyword_overlap": 6,
+      "matched_news_title": "Латвія попередила про масштабну інформаційну операцію РФ проти країн Балтії"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134571,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09851474709713595,
+      "keyword_overlap": 2,
+      "matched_news_title": "Чемпіон WBO зробив вибір між Усиком та Ітаумою"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65123,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09744148581771364,
+      "keyword_overlap": 6,
+      "matched_news_title": "Історичне приниження: швед Дьокереш зробив те, що не вдавалося жодному супернику України"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134533,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.096368773943966,
+      "keyword_overlap": 5,
+      "matched_news_title": "НМТ-2026 за кордоном: у 3 містах додали місця, а в 20 локаціях реєстрацію вже закрили"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134556,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09520043306812807,
+      "keyword_overlap": 4,
+      "matched_news_title": "Латвія попередила про масштабну інформаційну операцію РФ проти країн Балтії"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65113,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09245639872586665,
+      "keyword_overlap": 3,
+      "matched_news_title": "Росія запустила по Одесі понад 60 дронів: Зеленський відреагував на нічну атаку"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64796,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09237199985231223,
+      "keyword_overlap": 0,
+      "matched_news_title": "Дизель перевалив за 90 грн: на АЗС різко підняли ціни після обіду"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64734,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09221461413825832,
+      "keyword_overlap": 2,
+      "matched_news_title": "Президент Польщі підписав важливий для України закон про добровольців"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64732,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.0911740667070362,
+      "keyword_overlap": 3,
+      "matched_news_title": "В України закінчуються гроші на оборону: Bloomberg назвало критичний термін"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64818,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09047852465538786,
+      "keyword_overlap": 2,
+      "matched_news_title": "Депортованих зі США українців відразу з літака відправили в ТЦК, - CNN"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65046,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.08796487818866215,
+      "keyword_overlap": 2,
+      "matched_news_title": "Перемир'я знижує ціни? Нафта рекордно подешевшала після заяв Трампа"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65089,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.08779498463891082,
+      "keyword_overlap": 2,
+      "matched_news_title": "У Києві на вихідних змінять рух 11 автобусів: перелік маршрутів і нові схеми"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64752,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.08265491212208743,
+      "keyword_overlap": 1,
+      "matched_news_title": "Консолі Sony PlayStation 5 суттєво подорожчають: коли та наскільки"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64787,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.08207037405512077,
+      "keyword_overlap": 2,
+      "matched_news_title": "Консолі Sony PlayStation 5 суттєво подорожчають: коли та наскільки"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65125,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.08116378344337252,
+      "keyword_overlap": 2,
+      "matched_news_title": "\"Максимальна незалежність критичної інфраструктури\". Міський голова Дніпра про підготовку до опалювального сезону"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64819,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07898323137776077,
+      "keyword_overlap": 2,
+      "matched_news_title": "Енергетична \"наддержава\" без пального? Кремль ввів повну заборону на експорт бензину"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134620,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07775438800706619,
+      "keyword_overlap": 2,
+      "matched_news_title": "Силою \"мобілізували\" 60-річного: на Волині затримали посадовця ТЦК, але там заперечують побиття"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134677,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07757537750539076,
+      "keyword_overlap": 2,
+      "matched_news_title": "Зеленський домовився про дизель для України на рік на Близькому Сході"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134474,
+      "true_label": "uncertain",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07352396521371526,
+      "keyword_overlap": 2,
+      "matched_news_title": "Бензин різко здешевшав, але не всюди: ціни на АЗС 27 березня"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64698,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07267732711953345,
+      "keyword_overlap": 2,
+      "matched_news_title": "Сибіга і Рубіо обговорили війну в Україні на G7 у Франції"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64677,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07169316166769943,
+      "keyword_overlap": 3,
+      "matched_news_title": "Ціновий шок на АЗС: у Кабміні пояснили, чому \"паливний кешбек\" став єдиним виходом"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64736,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07143766569190739,
+      "keyword_overlap": 0,
+      "matched_news_title": "Перемир'я знижує ціни? Нафта рекордно подешевшала після заяв Трампа"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64714,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07079875663289394,
+      "keyword_overlap": 0,
+      "matched_news_title": "\"На мільйони не живу\". Суханов здивував зізнанням про заробітки під час війни"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134553,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07073367980728523,
+      "keyword_overlap": 0,
+      "matched_news_title": "Вилучили психотропи на 300 тис. грн: у Кривому Розі чотирьох чоловіків, серед яких дезертири, підозрюють у наркоторгівлі"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64751,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07064583242769013,
+      "keyword_overlap": 0,
+      "matched_news_title": "Консолі Sony PlayStation 5 суттєво подорожчають: коли та наскільки"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64666,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.06639306643058163,
+      "keyword_overlap": 1,
+      "matched_news_title": "Перемир'я знижує ціни? Нафта рекордно подешевшала після заяв Трампа"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134630,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.06493656291852853,
+      "keyword_overlap": 2,
+      "matched_news_title": "Україна та Об'єднані Арабські Емірати домовились про співробітництво у сфері безпеки та оборони — Зеленський"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134506,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.06258548114051407,
+      "keyword_overlap": 2,
+      "matched_news_title": "У Києві на вихідних змінять рух 11 автобусів: перелік маршрутів і нові схеми"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65099,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.06173822821235708,
+      "keyword_overlap": 2,
+      "matched_news_title": "Перемир'я знижує ціни? Нафта рекордно подешевшала після заяв Трампа"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134477,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.06114759549769826,
+      "keyword_overlap": 0,
+      "matched_news_title": "Перемир'я знижує ціни? Нафта рекордно подешевшала після заяв Трампа"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64675,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.05771686725398021,
+      "keyword_overlap": 2,
+      "matched_news_title": "Стубб відповів, чи може Трамп відмовитися від обіцянки зупинити війну в Україні"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134482,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.04989293943737324,
+      "keyword_overlap": 2,
+      "matched_news_title": "Президент Польщі підписав важливий для України закон про добровольців"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64747,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.048389179528589475,
+      "keyword_overlap": 2,
+      "matched_news_title": "Удари України по портах на Балтиці паралізували 40% експорту нафти з РФ, - Reuters"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64672,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.04788718602843258,
+      "keyword_overlap": 0,
+      "matched_news_title": "Перемир'я знижує ціни? Нафта рекордно подешевшала після заяв Трампа"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64701,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.041964305773479184,
+      "keyword_overlap": 1,
+      "matched_news_title": "Ведмежата в Карпатах потрапили на відео: унікальні кадри з фотопастки"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134542,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.041493171955799706,
+      "keyword_overlap": 0,
+      "matched_news_title": "Бензин різко здешевшав, але не всюди: ціни на АЗС 27 березня"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65058,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.03416143548930512,
+      "keyword_overlap": 1,
+      "matched_news_title": "Джоан Роулінг відреагувала на перший тизер серіалу про Гаррі Поттера від HBO: що вона сказала"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65075,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.02910151003304505,
+      "keyword_overlap": 0,
+      "matched_news_title": "Консолі Sony PlayStation 5 суттєво подорожчають: коли та наскільки"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65055,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.02548542748072975,
+      "keyword_overlap": 2,
+      "matched_news_title": "В України закінчуються гроші на оборону: Bloomberg назвало критичний термін"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134511,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.016863688085098343,
+      "keyword_overlap": 0,
+      "matched_news_title": "Президент Польщі підписав важливий для України закон про добровольців"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64567,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64568,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64570,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64589,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64595,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64600,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64601,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64606,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64628,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64635,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64663,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65003,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65013,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65015,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65016,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65202,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.5155711487458047,
+      "keyword_overlap": 17,
+      "matched_news_title": "Помер Джеймс Толкан, актор фільмів \"Найкращий стрілець\" та \"Назад у майбутнє\""
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134592,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.5074342385008707,
+      "keyword_overlap": 30,
+      "matched_news_title": "Зеленський зустрівся з українськими військовими експертами у Саудівській Аравії"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65146,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.4064976627398688,
+      "keyword_overlap": 16,
+      "matched_news_title": "Загинув відомий стендап-комік Артур Петров"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65203,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.3895278695214126,
+      "keyword_overlap": 26,
+      "matched_news_title": "Українські \"Фламінго\" атакували російський завод вибухівки"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134627,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.3480531440289275,
+      "keyword_overlap": 9,
+      "matched_news_title": "Іранські хакери зламали пошту директора ФБР і \"злили\" особисті дані за 10 років"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65191,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.3464458673479192,
+      "keyword_overlap": 25,
+      "matched_news_title": "На лівому березі Києва перебої зі світлом: призупинено рух електротранспорту"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65190,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.33922968846318546,
+      "keyword_overlap": 4,
+      "matched_news_title": "На лівому березі Києва перебої зі світлом: призупинено рух електротранспорту"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134590,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.33569374732625623,
+      "keyword_overlap": 13,
+      "matched_news_title": "Чи надсилатимуть повістки через \"Дію\": Мінцифри зробило заяву"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134609,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.33123110444583026,
+      "keyword_overlap": 5,
+      "matched_news_title": "Консолі Sony PlayStation 5 суттєво подорожчають: коли та наскільки"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65107,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.31184419092385374,
+      "keyword_overlap": 11,
+      "matched_news_title": "Мінус потужності: у Росії пошкоджено важливі установки одного з найбільших НПЗ"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65194,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.2918388781025012,
+      "keyword_overlap": 8,
+      "matched_news_title": "На лівому березі Києва перебої зі світлом: призупинено рух електротранспорту"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65142,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.2775115235549328,
+      "keyword_overlap": 25,
+      "matched_news_title": "Сили оборони \"вполювали\" цікаву ціль в окупованому Криму"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65180,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.25366742151590765,
+      "keyword_overlap": 21,
+      "matched_news_title": "Зеленський після зустрічі з лідером ОАЕ заявив про нову безпекову співпрацю"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65148,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.24552300322272744,
+      "keyword_overlap": 13,
+      "matched_news_title": "Британія надсилає терміновий пакет підтримки для підсилення української ППО"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134673,
+      "true_label": "uncertain",
+      "predicted_label": "verified",
+      "similarity_score": 0.21817059315392434,
+      "keyword_overlap": 7,
+      "matched_news_title": "Чи відправлять США зброю для України на Близький Схід: Зеленський назвав ключовий фактор"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65109,
+      "true_label": "unverified",
+      "predicted_label": "verified",
+      "similarity_score": 0.2164653531775887,
+      "keyword_overlap": 4,
+      "matched_news_title": "Генштаб підтвердив ураження Ярославського НПЗ"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65137,
+      "true_label": "uncertain",
+      "predicted_label": "verified",
+      "similarity_score": 0.21352558309407996,
+      "keyword_overlap": 9,
+      "matched_news_title": "РФ атакувала промислове підприємство на Полтавщині: без газу понад 5 тисяч абонентів"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64722,
+      "true_label": "unverified",
+      "predicted_label": "verified",
+      "similarity_score": 0.21116605336663152,
+      "keyword_overlap": 2,
+      "matched_news_title": "Консолі Sony PlayStation 5 суттєво подорожчають: коли та наскільки"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65143,
+      "true_label": "uncertain",
+      "predicted_label": "verified",
+      "similarity_score": 0.20596581832778918,
+      "keyword_overlap": 8,
+      "matched_news_title": "Ціновий шок на АЗС: у Кабміні пояснили, чому \"паливний кешбек\" став єдиним виходом"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134596,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.19488582961499099,
+      "keyword_overlap": 7,
+      "matched_news_title": "Депортованих зі США українців відразу з літака відправили в ТЦК, - CNN"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64700,
+      "true_label": "unverified",
+      "predicted_label": "verified",
+      "similarity_score": 0.17681816923039215,
+      "keyword_overlap": 2,
+      "matched_news_title": "Консолі Sony PlayStation 5 суттєво подорожчають: коли та наскільки"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134606,
+      "true_label": "unverified",
+      "predicted_label": "verified",
+      "similarity_score": 0.168363621047694,
+      "keyword_overlap": 2,
+      "matched_news_title": "Кешбек за січень нарахують мільйонам українців: коли прийдуть гроші"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134504,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.1679634981673133,
+      "keyword_overlap": 4,
+      "matched_news_title": "\"Це брехня\": Рубіо розлютився через заяву Зеленського про ультиматум від США"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134484,
+      "true_label": "unverified",
+      "predicted_label": "verified",
+      "similarity_score": 0.16264818328376082,
+      "keyword_overlap": 5,
+      "matched_news_title": "Силою \"мобілізували\" 60-річного: на Волині затримали посадовця ТЦК, але там заперечують побиття"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134491,
+      "true_label": "unverified",
+      "predicted_label": "verified",
+      "similarity_score": 0.16092021951419067,
+      "keyword_overlap": 2,
+      "matched_news_title": "Велика делегація з ЄС приїде в Україну в роковини Бучі: Сибіга розкрив деталі"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65074,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.15829742032989333,
+      "keyword_overlap": 7,
+      "matched_news_title": "\"Це брехня\": Рубіо розлютився через заяву Зеленського про ультиматум від США"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134660,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.15652059273054084,
+      "keyword_overlap": 5,
+      "matched_news_title": "Стубб відповів, чи може Трамп відмовитися від обіцянки зупинити війну в Україні"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65116,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.1563985252291987,
+      "keyword_overlap": 4,
+      "matched_news_title": "Перемир'я знижує ціни? Нафта рекордно подешевшала після заяв Трампа"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65064,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.14949648057990966,
+      "keyword_overlap": 5,
+      "matched_news_title": "Стубб відповів, чи може Трамп відмовитися від обіцянки зупинити війну в Україні"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64800,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.14816276722166688,
+      "keyword_overlap": 3,
+      "matched_news_title": "Перехід на літній час 2026: чому годинники в Україні переводять саме о 03:00 та що зміниться"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64737,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.1481548556763284,
+      "keyword_overlap": 2,
+      "matched_news_title": "Купили квартиру на \"вторинці\"? Що треба терміново зробити, щоб не залишитися без світла"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134555,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.136021929472844,
+      "keyword_overlap": 2,
+      "matched_news_title": "Кешбек за січень нарахують мільйонам українців: коли прийдуть гроші"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64746,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.13008204851107416,
+      "keyword_overlap": 2,
+      "matched_news_title": "Купили квартиру на \"вторинці\"? Що треба терміново зробити, щоб не залишитися без світла"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65118,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.12998539738429,
+      "keyword_overlap": 7,
+      "matched_news_title": "\"Це брехня\": Рубіо розлютився через заяву Зеленського про ультиматум від США"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65149,
+      "true_label": "uncertain",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.12633657949715354,
+      "keyword_overlap": 5,
+      "matched_news_title": "Удари України по портах на Балтиці паралізували 40% експорту нафти з РФ, - Reuters"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65119,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.1251636012617058,
+      "keyword_overlap": 3,
+      "matched_news_title": "Війна на Близькому Сході. Онлайн"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64709,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.122420183540592,
+      "keyword_overlap": 7,
+      "matched_news_title": "Джоан Роулінг відреагувала на перший тизер серіалу про Гаррі Поттера від HBO: що вона сказала"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64724,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.12201637320553509,
+      "keyword_overlap": 5,
+      "matched_news_title": "Конфлікт в Ірані рятує РФ: Путін може збільшити витрати на війну в Україні, - Bloomberg"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65051,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.12099437770883639,
+      "keyword_overlap": 2,
+      "matched_news_title": "Чи надсилатимуть повістки через \"Дію\": Мінцифри зробило заяву"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134500,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.12002322591153435,
+      "keyword_overlap": 8,
+      "matched_news_title": "Трампу стає \"трохи нудно\" через війну в Ірані: у Білому домі зростає напруга"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64820,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.11492904756956888,
+      "keyword_overlap": 8,
+      "matched_news_title": "Іран нафантазував удар по складу українських антидронових систем в Дубаї"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64776,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.11399583141603681,
+      "keyword_overlap": 2,
+      "matched_news_title": "Росія запустила по Одесі понад 60 дронів: Зеленський відреагував на нічну атаку"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134478,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.11084895423816288,
+      "keyword_overlap": 3,
+      "matched_news_title": "Перемир'я знижує ціни? Нафта рекордно подешевшала після заяв Трампа"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65094,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.1073842373844812,
+      "keyword_overlap": 2,
+      "matched_news_title": "Купили квартиру на \"вторинці\"? Що треба терміново зробити, щоб не залишитися без світла"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64775,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.10598360164633099,
+      "keyword_overlap": 2,
+      "matched_news_title": "Перемир'я знижує ціни? Нафта рекордно подешевшала після заяв Трампа"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65097,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.10301118046120486,
+      "keyword_overlap": 3,
+      "matched_news_title": "В Одесі чоловік зі зброєю і гранатою влаштував стрілянину посеред вулиці"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64699,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.10294707549268907,
+      "keyword_overlap": 2,
+      "matched_news_title": "Перемир'я знижує ціни? Нафта рекордно подешевшала після заяв Трампа"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134662,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.10262418299959558,
+      "keyword_overlap": 4,
+      "matched_news_title": "Іран заявив про \"знищення\" в ОАЕ систем ППО з українцями: Київ відреагував"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134631,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09841635510220993,
+      "keyword_overlap": 2,
+      "matched_news_title": "Енергетична \"наддержава\" без пального? Кремль ввів повну заборону на експорт бензину"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134598,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.0953715940187246,
+      "keyword_overlap": 3,
+      "matched_news_title": "Чоловік потрапив під потяг та загинув на Рівненщині"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134527,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09480691052335834,
+      "keyword_overlap": 2,
+      "matched_news_title": "Удар по пологовому будинку та житлових будинках: ворог атакував Одесу - перші подробиці"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65134,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09323981083590803,
+      "keyword_overlap": 2,
+      "matched_news_title": "Депортованих зі США українців відразу з літака відправили в ТЦК, - CNN"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64684,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09274956893344184,
+      "keyword_overlap": 3,
+      "matched_news_title": "Консолі Sony PlayStation 5 суттєво подорожчають: коли та наскільки"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65045,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09085580528131212,
+      "keyword_overlap": 5,
+      "matched_news_title": "РФ атакувала промислове підприємство на Полтавщині: без газу понад 5 тисяч абонентів"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65156,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09055173415885091,
+      "keyword_overlap": 2,
+      "matched_news_title": "Вилучили психотропи на 300 тис. грн: у Кривому Розі чотирьох чоловіків, серед яких дезертири, підозрюють у наркоторгівлі"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65100,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.09000675282649974,
+      "keyword_overlap": 2,
+      "matched_news_title": "Велика делегація з ЄС приїде в Україну в роковини Бучі: Сибіга розкрив деталі"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65164,
+      "true_label": "verified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.08971245074424035,
+      "keyword_overlap": 9,
+      "matched_news_title": "Удар по пологовому будинку та житлових будинках: ворог атакував Одесу - перші подробиці"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65165,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.08701142338996844,
+      "keyword_overlap": 3,
+      "matched_news_title": "Зеленський розповів про запаси дизеля і бензину для армії"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64831,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.08084183307453949,
+      "keyword_overlap": 3,
+      "matched_news_title": "Атака дронів на Одесу: зросла кількість загиблих"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65195,
+      "true_label": "unverified",
+      "predicted_label": "uncertain",
+      "similarity_score": 0.08080996783611824,
+      "keyword_overlap": 3,
+      "matched_news_title": "Зеленський розповів про запаси дизеля і бензину для армії"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64812,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07771950870759486,
+      "keyword_overlap": 0,
+      "matched_news_title": "Консолі Sony PlayStation 5 суттєво подорожчають: коли та наскільки"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64753,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07644506143835271,
+      "keyword_overlap": 0,
+      "matched_news_title": "Перемир'я знижує ціни? Нафта рекордно подешевшала після заяв Трампа"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134547,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07640184249629507,
+      "keyword_overlap": 2,
+      "matched_news_title": "Купили квартиру на \"вторинці\"? Що треба терміново зробити, щоб не залишитися без світла"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65081,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07527202068159883,
+      "keyword_overlap": 2,
+      "matched_news_title": "Кривий Ріг під атакою: росіяни вдарили по енергетиці та житловому сектору"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64790,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07509173846251953,
+      "keyword_overlap": 3,
+      "matched_news_title": "Енергетична \"наддержава\" без пального? Кремль ввів повну заборону на експорт бензину"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134636,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07382838529185357,
+      "keyword_overlap": 2,
+      "matched_news_title": "Зеленський зустрівся з українськими військовими експертами у Саудівській Аравії"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64708,
+      "true_label": "verified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.07163200094426989,
+      "keyword_overlap": 4,
+      "matched_news_title": "\"Це брехня\": Рубіо розлютився через заяву Зеленського про ультиматум від США"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134632,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.06970699997116286,
+      "keyword_overlap": 0,
+      "matched_news_title": "Перехід на літній час 2026: чому годинники в Україні переводять саме о 03:00 та що зміниться"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65174,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.06961017313220502,
+      "keyword_overlap": 3,
+      "matched_news_title": "Велика делегація з ЄС приїде в Україну в роковини Бучі: Сибіга розкрив деталі"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65050,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.06906413143630724,
+      "keyword_overlap": 2,
+      "matched_news_title": "РФ атакувала промислове підприємство на Полтавщині: без газу понад 5 тисяч абонентів"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65083,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.06893235548200874,
+      "keyword_overlap": 2,
+      "matched_news_title": "Загинув відомий стендап-комік Артур Петров"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64723,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.06635151212275633,
+      "keyword_overlap": 0,
+      "matched_news_title": "Депортованих зі США українців відразу з літака відправили в ТЦК, - CNN"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64707,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.06403390042576029,
+      "keyword_overlap": 2,
+      "matched_news_title": "Україна та Саудівська Аравія підписали угоду про оборонну співпрацю"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65136,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.05930350766204027,
+      "keyword_overlap": 2,
+      "matched_news_title": "Вилучили психотропи на 300 тис. грн: у Кривому Розі чотирьох чоловіків, серед яких дезертири, підозрюють у наркоторгівлі"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65069,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.057103863001920614,
+      "keyword_overlap": 1,
+      "matched_news_title": "Мінус потужності: у Росії пошкоджено важливі установки одного з найбільших НПЗ"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134664,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.05411776186231232,
+      "keyword_overlap": 2,
+      "matched_news_title": "Зеленський домовився про дизель для України на рік на Близькому Сході"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134497,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.053787280215720254,
+      "keyword_overlap": 2,
+      "matched_news_title": "Україна радилася з Ізраїлем щодо відкриття аеропортів і перельотів, - посол Ізраїлю"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64693,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.05058495423162532,
+      "keyword_overlap": 1,
+      "matched_news_title": "Депортованих зі США українців відразу з літака відправили в ТЦК, - CNN"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65053,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.04103010632916265,
+      "keyword_overlap": 3,
+      "matched_news_title": "РФ атакувала промислове підприємство на Полтавщині: без газу понад 5 тисяч абонентів"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65104,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.036689238228981826,
+      "keyword_overlap": 1,
+      "matched_news_title": "В Одесі військовий влаштував стрілянину і вибух"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134514,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.03476015227132742,
+      "keyword_overlap": 0,
+      "matched_news_title": "Депортованих зі США українців відразу з літака відправили в ТЦК, - CNN"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134473,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.033615127484962405,
+      "keyword_overlap": 0,
+      "matched_news_title": "Долар та євро скидають у ціні: курс валют в обмінниках та банках на 27 березня"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134588,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.029715814699403067,
+      "keyword_overlap": 1,
+      "matched_news_title": "Ще тепло, але є регіони з особливостями: чого чекати від погоди сьогодні"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65124,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.022175075416143292,
+      "keyword_overlap": 1,
+      "matched_news_title": "Були кадрові рішення. Партія \"Слуга народу\" провела з'їзд, - джерело"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64569,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64583,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64598,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64602,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64608,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64616,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64637,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64645,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64651,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64658,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65017,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65028,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65031,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65037,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65039,
+      "true_label": "unverified",
+      "predicted_label": "unverified",
+      "similarity_score": 0.0,
+      "keyword_overlap": 0,
+      "matched_news_title": null
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65196,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.5169251429163624,
+      "keyword_overlap": 15,
+      "matched_news_title": "Постріли та вибух в Одесі: поліція затримала чоловіка зі зброєю"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65108,
+      "true_label": "uncertain",
+      "predicted_label": "verified",
+      "similarity_score": 0.3858330787958267,
+      "keyword_overlap": 5,
+      "matched_news_title": "На лівому березі Києва перебої зі світлом: призупинено рух електротранспорту"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65166,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.2991836900746215,
+      "keyword_overlap": 17,
+      "matched_news_title": "\"Це брехня\": Рубіо розлютився через заяву Зеленського про ультиматум від США"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134671,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.2956375381290125,
+      "keyword_overlap": 6,
+      "matched_news_title": "Україна і Катар уклали 10-річну угоду про партнерство в оборонній сфері, - Зеленський"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134593,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.2919963539860908,
+      "keyword_overlap": 11,
+      "matched_news_title": "Сирський розкрив нові результати контрнаступу ЗСУ на півдні"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65168,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.2784227293044215,
+      "keyword_overlap": 8,
+      "matched_news_title": "Перехід на літній час 2026: чому годинники в Україні переводять саме о 03:00 та що зміниться"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64810,
+      "true_label": "uncertain",
+      "predicted_label": "verified",
+      "similarity_score": 0.27309160861982795,
+      "keyword_overlap": 2,
+      "matched_news_title": "Війна на Близькому Сході. Онлайн"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134650,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.2589907247662761,
+      "keyword_overlap": 7,
+      "matched_news_title": "Перехід на літній час 2026: чому годинники в Україні переводять саме о 03:00 та що зміниться"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65172,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.2425269535280449,
+      "keyword_overlap": 8,
+      "matched_news_title": "Американську зброю для України можуть перенаправити на Близький Схід, - Рубіо"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134634,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.24127760562202324,
+      "keyword_overlap": 5,
+      "matched_news_title": "Допомога з дронами в обмін на дизель: Зеленський відкрив деталі візиту на Близький Схід"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134624,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.22378801750625296,
+      "keyword_overlap": 11,
+      "matched_news_title": "Норвегія змінює правила для чоловіків з України: хто більше не отримає автоматичний захист"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65161,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.21344283776205855,
+      "keyword_overlap": 16,
+      "matched_news_title": "Удар по пологовому будинку та житлових будинках: ворог атакував Одесу - перші подробиці"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65111,
+      "true_label": "uncertain",
+      "predicted_label": "verified",
+      "similarity_score": 0.20806587217647743,
+      "keyword_overlap": 12,
+      "matched_news_title": "Американську зброю для України можуть перенаправити на Близький Схід, - Рубіо"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65106,
+      "true_label": "unverified",
+      "predicted_label": "verified",
+      "similarity_score": 0.2073037543685033,
+      "keyword_overlap": 6,
+      "matched_news_title": "Зеленський прибув до Катару та зробив заяву про безпеку і партнерство"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64807,
+      "true_label": "unverified",
+      "predicted_label": "verified",
+      "similarity_score": 0.19989308448414125,
+      "keyword_overlap": 3,
+      "matched_news_title": "Бензин різко здешевшав, але не всюди: ціни на АЗС 27 березня"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65181,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.19233521169478104,
+      "keyword_overlap": 4,
+      "matched_news_title": "Летіли понад 270 дронів, основний напрямок - Одещина: деталі нічної атаки РФ"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65199,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.1904363676723041,
+      "keyword_overlap": 10,
+      "matched_news_title": "СБС знищили пускові установки для запуску \"Шахедів\" в Донецькому аеропорту"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65101,
+      "true_label": "uncertain",
+      "predicted_label": "verified",
+      "similarity_score": 0.18765896032446588,
+      "keyword_overlap": 2,
+      "matched_news_title": "Війна на Близькому Сході. Онлайн"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64801,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.18441779031503416,
+      "keyword_overlap": 8,
+      "matched_news_title": "Норвегія змінює правила для чоловіків з України: хто більше не отримає автоматичний захист"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64715,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.1841704945677547,
+      "keyword_overlap": 2,
+      "matched_news_title": "Бензин різко здешевшав, але не всюди: ціни на АЗС 27 березня"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134659,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.1831313322769609,
+      "keyword_overlap": 6,
+      "matched_news_title": "На лівому березі Києва немає води, через перебої зі світлом зупинявся транспорт"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134626,
+      "true_label": "unverified",
+      "predicted_label": "verified",
+      "similarity_score": 0.1819609155657667,
+      "keyword_overlap": 2,
+      "matched_news_title": "Бензин різко здешевшав, але не всюди: ціни на АЗС 27 березня"
+    },
+    {
+      "telegram_channel": "@times_ukraina",
+      "telegram_message_id": 64778,
+      "true_label": "verified",
+      "predicted_label": "verified",
+      "similarity_score": 0.17980987625207331,
+      "keyword_overlap": 2,
+      "matched_news_title": "Депортованих зі США українців відразу з літака відправили в ТЦК, - CNN"
+    },
+    {
+      "telegram_channel": "@truexanewsua",
+      "telegram_message_id": 134557,
+      "true_label": "uncertain",
+      "predicted_label": "verified",
+      "similarity_score": 0.17615096707123615,
+      "keyword_overlap": 4,
+      "matched_news_title": "Допомога з дронами в обмін на дизель: Зеленський відкрив деталі візиту на Близький Схід"
+    },
+    {
+      "telegram_channel": "@suspilnenews",
+      "telegram_message_id": 65170,
+      "true_label": "uncertain",
+      "predicted_label": "verified",
+      "similarity_score": 0.1634476548131808,
+      "keyword_overlap": 3,
+      "matched_news_title": "Росія запустила по Одесі понад 60 дронів: Зеленський відреагував на нічну атаку"
+    }
+  ]
+}

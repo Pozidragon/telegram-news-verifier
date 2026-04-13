@@ -20,9 +20,9 @@ Thumbs.db
 .env
 
 # Data files
-data/raw/
-data/processed/
-data/experiments/
+# data/raw/
+# data/processed/
+# data/experiments/
 
 # Hugging Face / model cache if local
 *.safetensors
