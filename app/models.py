@@ -38,5 +38,10 @@ class VerificationResult(BaseModel):
 
     keyword_overlap: int = 0
     candidate_count: int = 0
+    top3_scores: list[float] = Field(default_factory=list)
+
+    # Intermediate values for bonus grid search (base scores before entity/corroboration bonuses)
+    top5_base_scores: list[float] = Field(default_factory=list)
+    top5_entity_overlaps: list[int] = Field(default_factory=list)
 
     status: Literal["verified", "uncertain", "unverified"]

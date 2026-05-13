@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import random
 from collections import defaultdict
+from pathlib import Path
 
 from app.config import Settings
 from app.storage.json_repository import load_jsonl
@@ -11,19 +12,29 @@ from app.storage.json_repository import load_jsonl
 RANDOM_SEED = 42
 
 TARGET_COUNTS = {
-    "verified": 25,
-    "uncertain": 35,
-    "unverified": 40,
+    "uncertain": 50,   # take all available — only 15 labeled so far, need ~35 more
+    "verified": 35,
+    "unverified": 20,
 }
+
+
+def _already_labeled(path: Path) -> set[tuple]:
+    if not path.exists():
+        return set()
+    return {(r["telegram_channel"], r["telegram_message_id"]) for r in load_jsonl(path)}
 
 
 def main() -> None:
     random.seed(RANDOM_SEED)
 
     input_path = Settings.PROCESSED_DIR / "verification_results.jsonl"
-    output_jsonl_path = Settings.EXPERIMENTS_DIR / "annotation_sample.jsonl"
+    output_jsonl_path = Settings.EXPERIMENTS_DIR / "annotation_sample_3.jsonl"
 
     rows = load_jsonl(input_path)
+
+    labeled = _already_labeled(Settings.EXPERIMENTS_DIR / "labeled_sample.jsonl")
+    rows = [r for r in rows if (r.get("telegram_channel"), r.get("telegram_message_id")) not in labeled]
+    print(f"Excluded {len(labeled)} already-labeled posts. {len(rows)} candidates remain.")
 
     by_status: dict[str, list[dict]] = defaultdict(list)
     for row in rows:
@@ -76,6 +87,10 @@ def main() -> None:
         print(f"  {status}: {count}")
 
     print(f"Saved annotation sample to {output_jsonl_path}")
+    print("Next steps:")
+    print("  1. Run merge_annotation_samples.py to add this batch to annotation_sample_merged.jsonl")
+    print("  2. Fill in true_label for each row in annotation_sample_3.jsonl")
+    print("  3. Run build_labeled_sample.py to rebuild labeled_sample.jsonl")
 
 
 if __name__ == "__main__":

@@ -13,6 +13,7 @@ from app.evaluation.metrics import (
 
 LABELED_SAMPLE_PATH = Settings.EXPERIMENTS_DIR / "labeled_sample.jsonl"
 VERIFICATION_RESULTS_PATH = Settings.PROCESSED_DIR / "semantic_verification_results.jsonl"
+OUTPUT_PATH = Settings.EXPERIMENTS_DIR / "semantic_experiment_results.json"
 
 
 def main() -> None:
@@ -62,6 +63,18 @@ def main() -> None:
     print(json.dumps(report_3class, ensure_ascii=False, indent=2))
     print("3-class confusion matrix:")
     print(json.dumps(matrix_3class, ensure_ascii=False, indent=2))
+
+    results = {
+        "evaluated_samples": len(y_true),
+        "accuracy": round(accuracy, 10),
+        "binary_verified_vs_rest": binary_metrics,
+        "report_3class": report_3class,
+        "confusion_matrix_3class": matrix_3class,
+    }
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with OUTPUT_PATH.open("w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
+    print(f"\nResults saved to {OUTPUT_PATH}")
 
 
 if __name__ == "__main__":

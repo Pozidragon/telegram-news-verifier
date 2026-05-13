@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 from app.config import Settings
 from app.models import TelegramPost, NewsArticle, VerificationResult
-from app.preprocessing.cleaner import clean_text, tokenize_keywords
+from app.preprocessing.cleaner import clean_text, tokenize_keywords, extract_entities
 
 
 class SemanticNewsVerifier:
@@ -71,26 +71,13 @@ class SemanticNewsVerifier:
 
         post_clean = clean_text(post.text)
         post_keywords = tokenize_keywords(post.text)
+        post_entities = extract_entities(post.text)
 
         prefiltered: list[tuple[NewsArticle, int]] = []
         for article in candidates:
             article_keywords = tokenize_keywords(f"{article.title} {article.text[:600]}")
             overlap = len(post_keywords & article_keywords)
-            if overlap >= 2:
-                prefiltered.append((article, overlap))
-
-        if not prefiltered:
-            return VerificationResult(
-                telegram_channel=post.channel,
-                telegram_message_id=post.message_id,
-                telegram_text=post.text,
-                similarity_score=0.0,
-                threshold_verified=self.threshold_verified,
-                threshold_uncertain=self.threshold_uncertain,
-                keyword_overlap=0,
-                candidate_count=0,
-                status="unverified",
-            )
+            prefiltered.append((article, overlap))
 
         prefiltered = sorted(prefiltered, key=lambda x: x[1], reverse=True)[: Settings.SEMANTIC_TOP_K]
 
@@ -106,13 +93,34 @@ class SemanticNewsVerifier:
 
         similarities = cosine_similarity(post_embedding, candidate_embeddings)[0]
 
-        scored = []
+        # Compute base scores (semantic similarity) before any bonuses
+        pre_bonus = []
         for article, overlap, score in zip(candidate_articles, overlaps, similarities):
-            final_score = float(score)
-            final_score = max(0.0, min(1.0, final_score))
-            scored.append((article, final_score, overlap))
+            base = max(0.0, min(1.0, float(score)))
+            article_entities = extract_entities(f"{article.title} {article.text[:600]}")
+            ent_overlap = len(post_entities & article_entities)
+            pre_bonus.append((article, base, overlap, ent_overlap))
+
+        # Apply entity bonus (grid-search optimal: 0.04 per matching named entity)
+        scored = []
+        for article, base, overlap, ent_overlap in pre_bonus:
+            s = min(1.0, base * (1 + 0.04 * ent_overlap)) if ent_overlap > 0 else base
+            scored.append((article, s, overlap))
 
         best_article, best_score, best_overlap = max(scored, key=lambda x: x[1])
+
+        # Corroboration bonus (grid-search optimal: 0.07 per corroborating article)
+        all_scores = sorted([s for _, s, _ in scored], reverse=True)
+        soft_threshold = self.threshold_uncertain * 0.7
+        n_corroborating = sum(1 for s in all_scores[1:5] if s >= soft_threshold)
+        best_score = min(1.0, best_score + 0.07 * n_corroborating)
+
+        top3_scores = [round(s, 4) for s in all_scores[:3]]
+
+        # Store top-5 base scores + entity overlaps for bonus grid search
+        top5_pre = sorted(pre_bonus, key=lambda x: x[1], reverse=True)[:5]
+        top5_base_scores = [round(x[1], 4) for x in top5_pre]
+        top5_entity_overlaps = [x[3] for x in top5_pre]
 
         if best_score >= self.threshold_verified:
             status = "verified"
@@ -133,6 +141,9 @@ class SemanticNewsVerifier:
             threshold_uncertain=self.threshold_uncertain,
             keyword_overlap=best_overlap,
             candidate_count=len(candidate_articles),
+            top3_scores=top3_scores,
+            top5_base_scores=top5_base_scores,
+            top5_entity_overlaps=top5_entity_overlaps,
             status=status,
         )
 

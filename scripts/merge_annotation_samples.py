@@ -9,12 +9,15 @@ from app.storage.json_repository import load_jsonl
 def main() -> None:
     sample1_path = Settings.EXPERIMENTS_DIR / "annotation_sample.jsonl"
     sample2_path = Settings.EXPERIMENTS_DIR / "annotation_sample_2.jsonl"
+    sample3_path = Settings.EXPERIMENTS_DIR / "annotation_sample_3.jsonl"
     merged_path = Settings.EXPERIMENTS_DIR / "annotation_sample_merged.jsonl"
 
-    sample1 = load_jsonl(sample1_path)
-    sample2 = load_jsonl(sample2_path)
-
-    merged = sample1 + sample2
+    merged = []
+    for path in (sample1_path, sample2_path, sample3_path):
+        if path.exists():
+            merged.extend(load_jsonl(path))
+        else:
+            print(f"Skipping {path.name} (not found)")
 
     seen = set()
     unique_rows = []

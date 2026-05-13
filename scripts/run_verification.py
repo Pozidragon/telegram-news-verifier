@@ -7,24 +7,27 @@ from app.storage.json_repository import load_jsonl, save_jsonl
 from app.verification.verifier import NewsVerifier
 
 
-def get_latest_file(directory: Path) -> Path:
+def load_all(directory: Path) -> list[dict]:
     files = sorted(directory.glob("*.jsonl"))
     if not files:
         raise FileNotFoundError(f"No jsonl files found in {directory}")
-    return files[-1]
+    rows = []
+    for f in files:
+        rows.extend(load_jsonl(f))
+    return rows
 
 
 def main() -> None:
     Settings.ensure_dirs()
 
-    telegram_file = get_latest_file(Settings.TELEGRAM_RAW_DIR)
-    news_file = get_latest_file(Settings.NEWS_RAW_DIR)
-
-    telegram_posts = [TelegramPost.model_validate(item) for item in load_jsonl(telegram_file)]
-    news_articles = [NewsArticle.model_validate(item) for item in load_jsonl(news_file)]
+    telegram_posts = [TelegramPost.model_validate(item) for item in load_all(Settings.TELEGRAM_RAW_DIR)]
+    news_articles = [NewsArticle.model_validate(item) for item in load_all(Settings.NEWS_RAW_DIR)]
 
     verifier = NewsVerifier()
-    results = [verifier.verify_post(post, news_articles).model_dump(mode="json") for post in telegram_posts]
+    print(f"Precomputing lemmatized article cache ({len(news_articles)} articles)...")
+    article_cache = verifier.precompute_articles(news_articles)
+    print(f"Verifying {len(telegram_posts)} posts...")
+    results = [verifier.verify_post(post, news_articles, article_cache).model_dump(mode="json") for post in telegram_posts]
 
     out_path = Settings.PROCESSED_DIR / "verification_results.jsonl"
     save_jsonl(out_path, results)

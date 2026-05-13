@@ -8,7 +8,7 @@ load_dotenv()
 
 
 class Settings:
-    TELEGRAM_API_ID: int = int(os.getenv("TELEGRAM_API_ID", "0"))
+    TELEGRAM_API_ID: int = int(os.getenv("TELEGRAM_API_ID") or "0")
     TELEGRAM_API_HASH: str = os.getenv("TELEGRAM_API_HASH", "")
     TELEGRAM_SESSION_NAME: str = os.getenv("TELEGRAM_SESSION_NAME", "telegram_news_session")
 
@@ -19,8 +19,8 @@ class Settings:
     EXPERIMENTS_DIR: Path = Path(os.getenv("EXPERIMENTS_DIR", "data/experiments"))
 
     TIME_WINDOW_HOURS: int = int(os.getenv("TIME_WINDOW_HOURS", "36"))
-    SIMILARITY_THRESHOLD_VERIFIED: float = float(os.getenv("SIMILARITY_THRESHOLD_VERIFIED", "0.16"))
-    SIMILARITY_THRESHOLD_UNCERTAIN: float = float(os.getenv("SIMILARITY_THRESHOLD_UNCERTAIN", "0.08"))
+    SIMILARITY_THRESHOLD_VERIFIED: float = float(os.getenv("SIMILARITY_THRESHOLD_VERIFIED", "0.45"))
+    SIMILARITY_THRESHOLD_UNCERTAIN: float = float(os.getenv("SIMILARITY_THRESHOLD_UNCERTAIN", "0.35"))
     MIN_POST_LENGTH: int = int(os.getenv("MIN_POST_LENGTH", "40"))
     MIN_KEYWORD_OVERLAP: int = int(os.getenv("MIN_KEYWORD_OVERLAP", "2"))
 

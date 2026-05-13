@@ -7,21 +7,21 @@ from app.storage.json_repository import load_jsonl, save_jsonl
 from app.verification.semantic_verifier import SemanticNewsVerifier
 
 
-def get_latest_file(directory: Path) -> Path:
+def load_all(directory: Path) -> list[dict]:
     files = sorted(directory.glob("*.jsonl"))
     if not files:
         raise FileNotFoundError(f"No jsonl files found in {directory}")
-    return files[-1]
+    rows = []
+    for f in files:
+        rows.extend(load_jsonl(f))
+    return rows
 
 
 def main() -> None:
     Settings.ensure_dirs()
 
-    telegram_file = get_latest_file(Settings.TELEGRAM_RAW_DIR)
-    news_file = get_latest_file(Settings.NEWS_RAW_DIR)
-
-    telegram_posts = [TelegramPost.model_validate(item) for item in load_jsonl(telegram_file)]
-    news_articles = [NewsArticle.model_validate(item) for item in load_jsonl(news_file)]
+    telegram_posts = [TelegramPost.model_validate(item) for item in load_all(Settings.TELEGRAM_RAW_DIR)]
+    news_articles = [NewsArticle.model_validate(item) for item in load_all(Settings.NEWS_RAW_DIR)]
 
     verifier = SemanticNewsVerifier()
     results = [verifier.verify_post(post, news_articles).model_dump(mode="json") for post in telegram_posts]
