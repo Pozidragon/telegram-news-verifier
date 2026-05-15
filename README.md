@@ -46,5 +46,3 @@ data/processed/         Verification results
 data/experiments/       Labeled samples, grid search results, experiment outputs
 docs/                   Thesis documents and defense notes
 ```
-
-See `CLAUDE.md` for full architecture documentation.
